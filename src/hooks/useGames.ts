@@ -15,6 +15,7 @@ export interface Game {
   parent_platforms: {
     platform: Plateform;
   }[];
+  metacritic: number;
 }
 
 interface FecthGamesResponse {
