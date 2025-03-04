@@ -6,23 +6,32 @@ import {
   MenuTrigger,
 } from "@/components/ui/menu";
 import usePlatforms from "@/hooks/usePlatforms";
+import { Plateform } from "@/hooks/useGames";
 
-const PlatFormSelector = () => {
+interface Props {
+  onSelectPlatform: (platform: Plateform) => void;
+  selectedPlatform: Plateform | null;
+}
+
+const PlatFormSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   const { data, error } = usePlatforms();
 
   if (error) return null;
 
-  console.log(data);
   return (
     <MenuRoot>
       <MenuTrigger asChild>
         <Button variant="outline" size="sm" marginX={10} paddingX={8}>
-          Platforms
+          {selectedPlatform?.name || "Platforms"}
         </Button>
       </MenuTrigger>
       <MenuContent>
         {data.map((platform) => (
-          <MenuItem key={platform.id} value={platform.id.toString()}>
+          <MenuItem
+            onClick={() => onSelectPlatform(platform)}
+            key={platform.id}
+            value={platform.id.toString()}
+          >
             {platform.name}
           </MenuItem>
         ))}
