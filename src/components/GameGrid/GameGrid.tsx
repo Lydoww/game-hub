@@ -13,9 +13,15 @@ interface Props {
 const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
   const { data, error, isLoading } = useGame(selectedGenre, selectedPlatform);
   const skeletons = [1, 2, 3, 4, 5, 6];
+
+  if (error) return <Text>{error}</Text>;
+
+  if (!isLoading && data.length === 0) {
+    return <Text color={'red'} marginTop={10}>Rawg API does not provide games on this platform or category.</Text>;
+  }
+
   return (
     <>
-      {error && <Text>{error}</Text>}
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3, xl: 5 }} padding={10} gap={3}>
         {isLoading &&
           skeletons.map((skeleton) => (
@@ -32,5 +38,6 @@ const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
     </>
   );
 };
+
 
 export default GameGrid;
