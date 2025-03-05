@@ -4,20 +4,24 @@ import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 import { Genre } from "@/hooks/useGenres";
+import { GameQuery } from "@/App";
 
 interface Props {
-  selectedGenre: Genre | null;
-  selectedPlatform: Plateform | null;
+  gameQuery: GameQuery;
 }
 
-const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
-  const { data, error, isLoading } = useGame(selectedGenre, selectedPlatform);
+const GameGrid = ({ gameQuery }: Props) => {
+  const { data, error, isLoading } = useGame(gameQuery);
   const skeletons = [1, 2, 3, 4, 5, 6];
 
   if (error) return <Text>{error}</Text>;
 
   if (!isLoading && data.length === 0) {
-    return <Text color={'red'} marginTop={10}>Rawg API does not provide games on this platform or category.</Text>;
+    return (
+      <Text color={"red"} marginTop={10}>
+        Rawg API does not provide games on this platform or category.
+      </Text>
+    );
   }
 
   return (
@@ -38,6 +42,5 @@ const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
     </>
   );
 };
-
 
 export default GameGrid;
