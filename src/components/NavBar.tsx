@@ -1,6 +1,7 @@
-import { HStack, Image, Link, Text } from "@chakra-ui/react";
+import { HStack, Image, Link } from "@chakra-ui/react";
 import logo from "../assets/rawg-like.svg";
 import Button from "./Button";
+import SearchInput from "./SearchInput";
 
 const NavBar = () => {
   return (
@@ -12,10 +13,7 @@ const NavBar = () => {
           _hover={{ scale: 1.1, transition: "0.3s ease" }}
         ></Image>
       </Link>
-
-      <Text fontSize={"2xl"} fontWeight={"bold"}>
-        RawgLike
-      </Text>
+      <SearchInput />
       <Button />
     </HStack>
   );
