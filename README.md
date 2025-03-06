@@ -13,3 +13,14 @@ Features ✨
   - Responsive Design: A user interface optimized for all devices (desktop, tablet, mobile).
   - Optimized Performance: Fast loading and smooth user experience thanks to React and Chakra UI.
    
+
+Technologies Used 🛠️
+
+  - React: JavaScript library for building user interfaces.
+  - TypeScript: Adds static types for better maintainability and error detection.
+  - Chakra UI v3: Modular and accessible UI component library.
+  - RAWG.io API: Video game API for fetching game data.
+  - Vercel: Hosting and continuous deployment.
+  - React Router: Route management for seamless navigation.
+  - Axios: HTTP client for API requests.
+  - React Icons: Modern icons for an intuitive user interface.
