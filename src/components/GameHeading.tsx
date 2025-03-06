@@ -11,7 +11,13 @@ const GameHeading = ({ gameQuery }: Props) => {
   } Games`;
 
   return (
-    <Heading as={"h1"} marginX={10} marginBottom={10} marginTop={10} fontSize={"5xl"}>
+    <Heading
+      as={"h1"}
+      marginX={10}
+      marginBottom={10}
+      marginTop={10}
+      fontSize={{ base: "2xl", lg: "5xl" }}
+    >
       {heading}
     </Heading>
   );
