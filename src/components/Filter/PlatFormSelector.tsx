@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/menu";
 import usePlatforms from "@/hooks/usePlatforms";
 import { Plateform } from "@/hooks/useGames";
+import { CiFilter } from "react-icons/ci";
 
 interface Props {
   onSelectPlatform: (platform: Plateform) => void;
@@ -21,7 +22,7 @@ const PlatFormSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   return (
     <MenuRoot>
       <MenuTrigger asChild>
-        <Button variant="outline" size="sm" marginX={10} paddingX={8}>
+        <Button variant="outline" marginX={10} paddingX={8}>
           {selectedPlatform?.name || "Platforms"}
         </Button>
       </MenuTrigger>

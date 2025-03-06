@@ -1,9 +1,8 @@
-import useGame, { Plateform } from "@/hooks/useGames";
+import useGame from "@/hooks/useGames";
 import { SimpleGrid, Text } from "@chakra-ui/react";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-import { Genre } from "@/hooks/useGenres";
 import { GameQuery } from "@/App";
 
 interface Props {
@@ -18,7 +17,12 @@ const GameGrid = ({ gameQuery }: Props) => {
 
   if (!isLoading && data.length === 0) {
     return (
-      <Text color={"red"} marginTop={10}>
+      <Text
+        color={"red"}
+        marginTop={10}
+        textAlign={"center"}
+        justifyContent={"center"}
+      >
         Rawg API does not provide games on this platform or category.
       </Text>
     );
