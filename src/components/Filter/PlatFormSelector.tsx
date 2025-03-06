@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/menu";
 import usePlatforms from "@/hooks/usePlatforms";
 import { Plateform } from "@/hooks/useGames";
-import { CiFilter } from "react-icons/ci";
 
 interface Props {
   onSelectPlatform: (platform: Plateform) => void;
