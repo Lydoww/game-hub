@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# 🎮 Game Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Game Hub est une application web moderne et responsive qui permet aux utilisateurs de découvrir, explorer et rechercher des jeux vidéo en utilisant les données de l'API RAWG.io. Conçue avec React et TypeScript, elle offre une expérience fluide et optimisée grâce à Chakra UI v3.
 
-Currently, two official plugins are available:
+🔗 **Application en ligne** : [Game Hub](https://rawglike.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Fonctionnalités
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ **Recherche de jeux** : Trouvez des jeux par titre, genre, plateforme ou éditeur.
+✅ **Détails des jeux** : Accédez à des informations complètes, incluant images, descriptions, notes et liens vers les boutiques.
+✅ **Filtres avancés** : Affinez votre recherche par genre, plateforme, date de sortie, etc.
+✅ **Design responsive** : Une interface adaptée à tous les appareils (desktop, tablette, mobile).
+✅ **Performance optimisée** : Temps de chargement rapide et navigation fluide grâce à React et Chakra UI.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Technologies utilisées
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- ⚛ **React** : Bibliothèque JavaScript pour la construction d'interfaces utilisateur.
+- 🦾 **TypeScript** : Typage statique pour une meilleure maintenabilité et une détection précoce des erreurs.
+- 🎨 **Chakra UI v3** : Librairie de composants UI modulaire et accessible.
+- 🎮 **RAWG.io API** : Source de données pour les jeux vidéo.
+- 🚀 **Vercel** : Hébergement et déploiement continu.
+- 🔀 **React Router** : Gestion des routes pour une navigation fluide.
+- 📡 **Axios** : Client HTTP pour les requêtes API.
+- 🔎 **React Icons** : Icônes modernes pour une interface intuitive.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues ! Suivez ces étapes pour améliorer le projet :
+
+1. **Fork** le projet.
+2. Créez une branche pour votre fonctionnalité :
+   ```sh
+   git checkout -b feature/NouvelleFonctionnalite
+   ```
+3. Faites vos modifications et validez-les :
+   ```sh
+   git commit -m "Ajout de NouvelleFonctionnalite"
+   ```
+4. Poussez la branche :
+   ```sh
+   git push origin feature/NouvelleFonctionnalite
+   ```
+5. Ouvrez une **Pull Request**.
+
+---
+
+🚀 Profitez de **Game Hub** et plongez dans l'univers des jeux vidéo ! 🎮✨
+
+Si vous souhaitez personnaliser ce README avec des captures d'écran, remplacez simplement les liens placeholders par vos propres images. 😊
+
