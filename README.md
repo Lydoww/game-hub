@@ -31,44 +31,43 @@ Installation and Local Setup 🚀
 Follow these steps to run the project locally on your machine.
 Prerequisites
 
-    Node.js (version 16 or higher)
-
-    npm or yarn
+  Node.js (version 16 or higher)
+  npm or yarn
 
 Steps
 
-    Clone the repository:
+  Clone the repository:
     bash
     Copy
 
-    git clone https://github.com/your-username/game-hub.git
+  git clone https://github.com/your-username/game-hub.git
     cd game-hub
 
-    Install dependencies:
+  Install dependencies:
     bash
     Copy
 
-    npm install
+  npm install
     # or
-    yarn install
+  yarn install
 
-    Set up the API key:
+  Set up the API key:
 
-        Get a free API key from RAWG.io.
+  Get a free API key from RAWG.io.
 
-        Create a .env file in the root of the project and add your API key:
+  Create a .env file in the root of the project and add your API key:
         env
         Copy
 
-        VITE_RAWG_API_KEY=your_api_key_here
+  VITE_RAWG_API_KEY=your_api_key_here
 
-    Start the application:
+  Start the application:
     bash
     Copy
 
-    npm run dev
+  npm run dev
     # or
     yarn dev
 
-    Access the application:
+  Access the application:
     Open your browser and navigate to http://localhost:3000.
