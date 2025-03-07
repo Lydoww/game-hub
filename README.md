@@ -1,56 +1,54 @@
 # 🎮 Game Hub
 
-Game Hub est une application web moderne et responsive qui permet aux utilisateurs de découvrir, explorer et rechercher des jeux vidéo en utilisant les données de l'API RAWG.io. Conçue avec React et TypeScript, elle offre une expérience fluide et optimisée grâce à Chakra UI v3.
+Game Hub is a modern and responsive web application that allows users to discover, explore, and search for video games using data from the RAWG.io API. Built with React and TypeScript, it offers a smooth and optimized experience thanks to Chakra UI v3.
 
-🔗 **Application en ligne** : [Game Hub](https://rawglike.vercel.app/)
-
----
-
-## ✨ Fonctionnalités
-
-✅ **Recherche de jeux** : Trouvez des jeux par titre, genre, plateforme ou éditeur.
-✅ **Détails des jeux** : Accédez à des informations complètes, incluant images, descriptions, notes et liens vers les boutiques.
-✅ **Filtres avancés** : Affinez votre recherche par genre, plateforme, date de sortie, etc.
-✅ **Design responsive** : Une interface adaptée à tous les appareils (desktop, tablette, mobile).
-✅ **Performance optimisée** : Temps de chargement rapide et navigation fluide grâce à React et Chakra UI.
+🔗 **Live Application** : [Game Hub](https://rawglike.vercel.app/)
 
 ---
 
-## 🛠 Technologies utilisées
+## ✨ Features
 
-- ⚛ **React** : Bibliothèque JavaScript pour la construction d'interfaces utilisateur.
-- 🦾 **TypeScript** : Typage statique pour une meilleure maintenabilité et une détection précoce des erreurs.
-- 🎨 **Chakra UI v3** : Librairie de composants UI modulaire et accessible.
-- 🎮 **RAWG.io API** : Source de données pour les jeux vidéo.
-- 🚀 **Vercel** : Hébergement et déploiement continu.
-- 🔀 **React Router** : Gestion des routes pour une navigation fluide.
-- 📡 **Axios** : Client HTTP pour les requêtes API.
-- 🔎 **React Icons** : Icônes modernes pour une interface intuitive.
+✅ Game Search: Find games by title, genre, platform, or publisher.
+✅ Game Details: Access comprehensive information, including images, descriptions and ratings.
+✅ Advanced Filters: Refine your search by genre, platform, release date, etc.
+✅ Responsive Design: An interface optimized for all devices (desktop, tablet, mobile).
+✅ Optimized Performance: Fast loading times and smooth navigation thanks to React and Chakra UI.
 
 ---
 
-## 🤝 Contribuer
+## 🛠 Technologies Used
 
-Les contributions sont les bienvenues ! Suivez ces étapes pour améliorer le projet :
+- ⚛ React: JavaScript library for building user interfaces.
+-⚡Vite: Fast and lightweight development environment for React projects.
+- 🦾 TypeScript: Static typing for better maintainability and early error detection.
+- 🎨 Chakra UI v3: Modular and accessible UI component library.
+- 🎮 RAWG.io API: Video game data source.
+- 🚀 Vercel: Hosting and continuous deployment.
+- 🔀 React Router: Route management for smooth navigation.
+- 📡 Axios: HTTP client for API requests.
+- 🔎 React Icons: Modern icons for an intuitive interface
+---
 
-1. **Fork** le projet.
-2. Créez une branche pour votre fonctionnalité :
+## 🤝 Contributing
+
+Contributions are welcome! Follow these steps to improve the project:
+
+1. **Fork** the repository.
+2. Create a new branch for your feature:
    ```sh
    git checkout -b feature/NouvelleFonctionnalite
    ```
-3. Faites vos modifications et validez-les :
+3. Make your changes and commit them:
    ```sh
    git commit -m "Ajout de NouvelleFonctionnalite"
    ```
-4. Poussez la branche :
+4. Push the branch:
    ```sh
    git push origin feature/NouvelleFonctionnalite
    ```
-5. Ouvrez une **Pull Request**.
+5. Open a **Pull Request**.
 
 ---
 
-🚀 Profitez de **Game Hub** et plongez dans l'univers des jeux vidéo ! 🎮✨
-
-Si vous souhaitez personnaliser ce README avec des captures d'écran, remplacez simplement les liens placeholders par vos propres images. 😊
+🚀 Enjoy Game Hub and dive into the world of video games! 🎮✨
 
