@@ -2,6 +2,8 @@
 
 Game Hub is a modern and responsive web application that allows users to discover, explore, and search for video games using data from the RAWG.io API. Built with React and TypeScript, it offers a smooth and optimized experience thanks to Chakra UI v3.
 
+![Capture d'écran 2025-06-29 184553](https://github.com/user-attachments/assets/2ef6c54e-ed45-4616-942e-11a4ab9f2109)
+
 🔗 **Live Application** : [Game Hub](https://rawglike.vercel.app/)
 
 ---
